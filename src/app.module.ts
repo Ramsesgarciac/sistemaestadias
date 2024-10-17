@@ -2,10 +2,11 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { DireccionModule } from './direccion/direccion.module';
-import { SectorModule } from './sector/sector.module';
-import { EmpleadorModule } from './empleador/empleador.module';
-import { EmpresaModule } from './empresa/empresa.module';
+import { DireccionModule } from 'src/modules/direccion/direccion.module';
+// import { DireccionModule } from '..//direccion/direccion.module';
+import { SectorModule } from 'src/modules/sector/sector.module';
+import { EmpleadorModule } from 'src/modules/empleador/empleador.module';
+import { EmpresaModule } from 'src/modules/empresa/empresa.module';
 
 
 @Module({
