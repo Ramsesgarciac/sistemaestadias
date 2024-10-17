@@ -1,19 +1,15 @@
 import { IsNumber, IsPositive, IsString, Min, MinLength } from "class-validator";
 
-export class CreateEmpleadorDto {
+export class CreateTitulacionDto {
     @IsString()
-    @MinLength(5)
+    @MinLength(3)
     nombre:string;
 
     @IsString()
     @MinLength(3)
-    cargo:string;
+    descripcion:string;
 
     @IsString()
     @MinLength(3)
-    email:string;
-    
-    @IsString()
-    @MinLength(10)
-    num_telefono:string;
+    tipo:string;
 }
